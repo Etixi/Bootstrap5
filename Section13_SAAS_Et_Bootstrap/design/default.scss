@@ -1,0 +1,51 @@
+// Option A : inclure tout Bootstrap
+
+$theme-colors : (
+    'primary' : #f1c40f,
+    'etixicode' : #e67e22
+);
+    
+$spacer : 1rem;
+   
+$spacers: (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 6)
+
+);
+
+
+$grid-breakpoints: (
+
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    3xl: 1600px 
+);
+
+$display-font-size : (
+
+    1: 5rem,
+    2: 4.5rem,
+    3: 4rem,
+    4: 3.5rem,
+    5: 3rem,
+    6: 2.5rem,
+    7: 2rem
+);
+
+$table-cell-padding-x: 1rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// Option B : inclure seulement ce qu'on a besoin
+
+// @import "../node_modules/bootstrap/scss/";

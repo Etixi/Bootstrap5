@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="design/default.css" />
+    <title>Site bootstrap</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand">
+        <div class="container">
+            <div class="navbar-brand">
+                Etixi | Code
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Accueil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="btn-group-vertical">
+
+            <button class="btn btn-primary">Bouton principal</button>
+            <button class="btn btn-outline-primary">Bouton secondaire</button>
+        </div>
+    
+        <button class="btn btn-primary btn-block" disabled>Lien</button>
+    
+        <div class="alert alert-dark mt-3">
+            <h3 class="alert-heading">Bienvenue dans cette partie sur les boutons</h3>
+            Ceci est une notification et ceci un <a href="#" class="alert-link">lien</a>
+        </div>
+
+        <h3>Les meilleurs restaurants de Paris <span class="badge bg-secondary">New</span></h3>
+        <button type="button" class="btn btn-primary">
+            Demande d'amis <span class="badge rounded-circle bg-dark">5</span>
+        </button>
+
+        <form class="mt-5">
+            <p>
+                <label for="prenom" class="form-label">Prenom</label>
+                <input type="text" name="prenom" id="prenom" class="form-control">
+            </p>
+
+            <p>
+                <label for="pays" class="form-label">Pays</label>
+                <select type="text" name="pays" id="pays" class="form-select">
+                    <option value="France">France</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Sud Afrique">Sud Afrique</option>
+                </select>
+            </p>
+
+            <div class="mb-3">
+                <div class="input-group">
+                    <input type="file" class="form-control" id="fichier" name="fichier" aria-describedby="inputGroupFileAddon">
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                    <label for="email" class="form-label">Adresse email</label>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" class="form-control">
+                    <span class="input-group-text">@</span>
+                </div>
+                
+            </div>
+
+            <p>
+                <div class="input-group-lg">
+                    <span class="input-group-text">
+                        Vos commentaires
+                    </span>
+                    <textarea class="form-control"></textarea>
+                </div>
+            </p>
+                
+            
+            
+            <!--Checkbox-->
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="mode_sombre" name="mode_sombre">
+                <label class="form-check-label" for="mode_sombre">Mode sombre</label>
+            </div>
+        
+            <!--Switch-->
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="mode_sombre_pour_switch" name="mode_sombre">
+                <label for="mode_sombre_pour_switch" class="form-check-label" >Mode sombre</label>
+            </div>
+        </form>
+
+        <!--Cartes-->
+        <div class="card mt-5">
+            
+            <img src="https://cdn.pixabay.com/photo/2023/04/11/13/27/bird-7917250_1280.jpg" 
+                class="card-img-top" alt="Montagnes">
+
+            <div class="card-header">
+                Destination
+            </div>   
+
+            <div class="card-body">
+                <h5 class="card-title">Titre</h5>
+                <h6 class="card-subtitle text-muted">Destination</h6>
+                <p class="card-text">Ceci est un exemple de carte que Bootstrap nous permet de créer</p>
+                <a href="#" class="card-link">En savoir plus</a>
+                <a href="#" class="card-link">Réserver</a>
+            </div>
+
+            <div class="card-footer p-0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Visiter les pyrénées</li>
+                    <li class="list-group-item">Visiter le jura</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Barres de progression-->
+        <div class="progress mt-5">
+            <div class="progress-bar w-25 bg-info" >25%</div>
+        </div>
+
+        <div class="progress mt-1">
+            <div class="progress-bar w-25" >25%</div>
+            <div class="progress-bar w-50 bg-success" >50%</div>
+        </div>
+
+        <div class="progress mt-1">
+            <div class="progress-bar progress-bar-striped progress-bar-animated w-75 bg-dark" >75%</div>
+        </div>
+
+        <!--Fils d'Ariane-->
+        <nav class="mt-5 bg-light">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Accueil</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Destination</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Les pyrénées</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+</body>
+</html>
